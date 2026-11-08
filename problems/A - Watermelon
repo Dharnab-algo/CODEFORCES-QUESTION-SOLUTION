@@ -1,0 +1,27 @@
+By _Dharnabthakuria01, contest: Codeforces Beta Round 4 (Div. 2 Only), problem: (A) Watermelon, Accepted, #, Copy
+
+problem : A - Watermelon
+link : https://codeforces.com/problemset/problem/4/A
+rating : 800
+tags : brute force , maths
+idea : 1.both friends fan of even number 
+       2.the watermelon can bes split into two even parts only if w is even and w > 2,the even split is 2 + 0,which leaves one friend with nothing and other with th whole watermelon , 
+       so the answer is NO . for any even w > 2 ,split it as 2+(w-2);both parts are even and positive....
+
+program : --
+-----------------------------------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+
+int main(){
+    int w;
+    cin >> w;
+    if(w%2 == 0 && w > 2)
+    cout << "YES";
+    else
+    cout << "NO";
+ 
+    return 0;
+}
+-----------------------------------------------------------------------------------------------------------------
+
