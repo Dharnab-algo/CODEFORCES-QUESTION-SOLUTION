@@ -1,1 +1,150 @@
-
+By _Dharnabthakuria01, contest: Codeforces Round 143 (Div. 2), problem: (A) Team, Accepted, #, Copy
+-----------------------------------------------------------------------------------------------------
+#include<iostream>
+using namespace std;
+ 
+int main(){
+    int n,count=0;
+    cin >> n;
+    for (int i = 1; i <= n ; i++){
+        int a, b, c;
+        cin >> a >> b >> c;
+        if(a+b+c>=2){
+            count++;
+        }
+    }
+    cout << count;
+ 
+    return 0;
+}
+-----------------------------------------------------------------------------------------------------
+→Judgement Protocol
+Test: #1, time: 30 ms., memory: 0 KB, exit code: 0, checker exit code: 0, verdict: OK
+Copy
+Input
+3
+1 1 0
+1 1 1
+1 0 0
+Copy
+Output
+2
+Copy
+Answer
+2
+Copy
+Checker Log
+ok answer is 2
+Test: #2, time: 92 ms., memory: 0 KB, exit code: 0, checker exit code: 0, verdict: OK
+Copy
+Input
+2
+1 0 0
+0 1 1
+Copy
+Output
+1
+Copy
+Answer
+1
+Copy
+Checker Log
+ok answer is 1
+Test: #3, time: 0 ms., memory: 0 KB, exit code: 0, checker exit code: 0, verdict: OK
+Copy
+Input
+1
+1 0 0
+Copy
+Output
+0
+Copy
+Answer
+0
+Copy
+Checker Log
+ok answer is 0
+Test: #4, time: 0 ms., memory: 0 KB, exit code: 0, checker exit code: 0, verdict: OK
+Copy
+Input
+2
+1 0 0
+1 1 1
+Copy
+Output
+1
+Copy
+Answer
+1
+Copy
+Checker Log
+ok answer is 1
+Test: #5, time: 0 ms., memory: 12 KB, exit code: 0, checker exit code: 0, verdict: OK
+Copy
+Input
+5
+1 0 0
+0 1 0
+1 1 1
+0 0 1
+0 0 0
+Copy
+Output
+1
+Copy
+Answer
+1
+Copy
+Checker Log
+ok answer is 1
+Test: #6, time: 30 ms., memory: 0 KB, exit code: 0, checker exit code: 0, verdict: OK
+Copy
+Input
+10
+0 1 0
+0 1 0
+1 1 0
+1 0 0
+0 0 1
+0 1 1
+1 1 1
+1 1 0
+0 0 0
+0 0 0
+Copy
+Output
+4
+Copy
+Answer
+4
+Copy
+Checker Log
+ok answer is 4
+Test: #7, time: 30 ms., memory: 0 KB, exit code: 0, checker exit code: 0, verdict: OK
+Copy
+Input
+15
+0 1 0
+1 0 0
+1 1 0
+1 1 1
+0 1 0
+0 0 1
+1 0 1
+1 0 1
+1 0 1
+0 0 0
+1 1 1
+1 1 0
+0 1 1
+1 1 0
+1 1 1
+Copy
+Output
+10
+Copy
+Answer
+10
+Copy
+Checker Log
+ok answer is 10
