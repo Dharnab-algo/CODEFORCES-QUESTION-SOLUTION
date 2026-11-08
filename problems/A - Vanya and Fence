@@ -1,0 +1,35 @@
+By _Dharnabthakuria01, contest: Codeforces Round 355 (Div. 2), problem: (A) Vanya and Fence, Accepted, #, Copy
+
+problem : A - Vanya and Fence 
+link : https://codeforces.com/problemset/problem/677/A
+rating : 800
+tags : implementation
+idea : a friend with height <= h fits through the fence normally and takes width 
+       1. a friend taller than h must bend and takes width 
+       2. sum the widths over all friends
+time : o(n)
+space : o(1)
+
+program --
+---------------------------------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+ 
+int main() {
+    int n, h, width = 0;
+    cin >> n >> h;
+    for (int i = 0; i < n; i++) {
+        int a;
+        cin >> a;
+        if(a<=h){
+            width++;}
+        else {
+            width+=2;
+        }
+    }
+ 
+    cout << width << '\n';
+    return 0;
+}
+-----------------------------------------------------------------------------------------------------------------
+
