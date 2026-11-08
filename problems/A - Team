@@ -1,0 +1,32 @@
+By _Dharnabthakuria01, contest: Codeforces Round 143 (Div. 2), problem: (A) Team, Accepted, #, Copy
+
+problem : A - Team
+link : https://codeforces.com/problemset/problem/231/A
+rating : 800
+tages : brute force ,greedy
+idea : for each problem , three friends give 0 and 1 (sure or not).they solve the problem only if at least two are sure,
+       i.e. the sum of th three values is >=2
+       count the problems that satisfy this...
+time : o(n)
+space : o(1)
+
+program -- 
+-----------------------------------------------------------------------------------------------------
+#include<iostream>
+using namespace std;
+ 
+int main(){
+    int n,count=0;
+    cin >> n;
+    for (int i = 1; i <= n ; i++){
+        int a, b, c;
+        cin >> a >> b >> c;
+        if(a+b+c>=2){
+            count++;
+        }
+    }
+    cout << count;
+ 
+    return 0;
+}
+-----------------------------------------------------------------------------------------------------
