@@ -1,0 +1,31 @@
+By _Dharnabthakuria01, contest: Codeforces Round 405 (rated, Div. 2, based on VK Cup 2017 Round 1), problem: (A) Bear and Big Brother, Accepted, #, Copy
+
+problem : A - Bear and Big Brother
+link : https://codeforces.com/problemset/problem/791/A
+rating : 800
+tages : implementation , brute force
+idea : Limak's weight a triples every year and Bob's weight b
+ *           doubles every year. Simulate year by year until a > b
+ *           and count the years. Since a grows faster, this ends
+ *           quickly (constraints are a <= b <= 10).
+time : o(log b) in practice
+space : o(1)
+
+program -- 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+#include<iostream>
+using namespace std;
+ 
+int main(){
+    int a,b,years = 0;
+    cin >> a >> b;
+    while(a<=b){
+        a=a*3;
+        b=b*2;
+        years++;
+    }
+    cout << years;
+ 
+    return 0;
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
