@@ -1,13 +1,8 @@
-# Codeforces Solutions
+# Codeforces problems solution and contest solution repo
 
 
 
 ![Language](GNU G++23 14.2 (64 bit, msys2))
-
-
-
-
-![Platform](https://codeforces.com/)
 
 A structured archive of my Codeforces solutions in C++, built for long-term revision. It covers both practice problems and contest solutions, including upsolved problems.
 
