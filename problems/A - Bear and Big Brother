@@ -11,7 +11,7 @@ idea : Limak's weight a triples every year and Bob's weight b
 time : o(log b) in practice
 space : o(1)
 
-program -- 
+program code -- 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 #include<iostream>
 using namespace std;
