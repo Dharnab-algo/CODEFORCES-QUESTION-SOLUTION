@@ -1,12 +1,15 @@
+By _Dharnabthakuria01, contest: Codeforces Round 799 (Div. 4), problem: (A) Marathon, Accepted, #, Copy
 
+problem : A - Marathon
+link : https://codeforces.com/contest/1692/problem/A
+rating : 800
+tags : implementation
+idea : Since all four distances are distinct, directly compare Timur's distance a with b, c, and d. Count how many values are strictly greater than a (> a) to find how many participants are ahead of him.
+Time Complexity: O(1)
+Space Complexity: O(1)
 
-
-
-
-
-
-
-
+program code : --
+-----------------------------------------------------------------------------------------------------------------
 #include<iostream>
 using namespace std;
  
@@ -24,3 +27,4 @@ int main(){
     }
     return 0;
 }
+-----------------------------------------------------------------------------------------------------------------
